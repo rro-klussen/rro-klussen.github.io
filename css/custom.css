@@ -1,0 +1,187 @@
+* {
+    font-family: 'Gill Sans MT', 'Gill Sans', GillSans, Arial, Helvetica, sans-serif;
+}
+h1, h3 {
+    color: #9e9937;
+    margin-bottom: 0px;
+}
+h1 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 18px;
+}
+p {
+    margin: 0px;
+    font-size: 18px;
+}
+li {
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background: #eee url('../img/grey.png') repeat;
+}
+#container {
+    width: 1000px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header {
+    height: 175px;
+    background: #fff url('../img/header-1000.jpg');
+}
+
+
+/* ---------------------- BODY - main block definitions --------------------- */
+#body {
+    min-height: 600px;
+    padding-left: 50px;
+}
+#body ul {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 0 -50px;
+}
+#body li {
+    width: 900px;
+    height: 330px;
+    margin: 0 50px 30px 50px;
+    display: block;
+}
+#body li > div {
+    margin: 0px;
+    padding: 5px 0 0 40px;
+    width: 430px;
+    height: 330px;
+    float: left;
+}
+#body li.inverse > div {
+    float: right;
+    padding: 5px 40px 0 0;
+}
+#body li > div.photo_frame {
+    padding: 5px 0 0 0;
+    margin-left: -10px;
+    width: 440px;
+    position: relative;
+}
+
+/* ----------------------------- BODY - photo ------------------------------- */
+#body li .photo_container, 
+#body li .photo_overlay,
+#body li .photo_frame > img {
+    width: 440px;
+    height: 330px;
+    overflow: hidden;
+    position: absolute;
+}
+#body li .photo_overlay {
+    background: url('../img/photo-overlay.png');
+    z-index: 99;
+}
+#body li .photo_frame .photo {
+    display: none; /* Hide photo's till cycle plugin is loaded */
+}
+#body li .photo_frame .photo.first {
+    display: block; /* Set first photo visible, bequase of cycle termination */
+}
+/* --------------------------- BODY - cycle pager --------------------------- */
+#body li .photo_frame .pager {
+    position: absolute;
+    bottom: -12px;
+    text-align: center;
+    width: 440px;
+    height: 12px;
+    line-height: 12px;
+}
+#body li .photo_frame .pager a {
+    display: inline-block;
+    width: 12px;
+    height: 0;
+    padding-top: 12px;
+    background-image: url('../img/pager.png');
+    background-position: 0 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+#body li .photo_frame .pager a.current {
+    background-position: 0 -12px;
+}
+/* ------------------------- BODY - photo cation ---------------------------- */
+#body li .photo_frame .photo .caption {
+    position:absolute;
+    bottom:0px;
+    left:0;
+    height:39px;
+    padding:5px 0 0 25px;
+    background:#434343;
+    background:rgba(67,67,67,.8);
+    width:413px;
+    color:#fff;
+    border-top:1px solid #9E9937;
+    text-shadow:none;
+    margin: 0 1px 1px 1px;
+}
+#body li .photo_frame .photo .caption p {
+    font-size: 16px;
+}
+
+/* ---------------------- BODY - lists in text frames ----------------------- */
+#body div ul {
+    list-style-type: disc;
+    margin: auto;
+    padding: 10px 0 15px 10px;
+    width: 400px;
+}
+#body div ul li {
+    display: list-item;
+    width: auto;
+    height: auto;
+    margin: auto;
+    color: #9e9937;
+}
+#body div ul li span {
+    color: #000;
+}
+
+
+/* --------------------------------- FOOTER --------------------------------- */
+#footer {
+    height: 110px;
+    background: #efeef3 url('../img/footer-grey-1000.jpg') no-repeat;
+    padding: 34px 10px 0px 10px;
+}
+#footer:after {
+    display: block;
+    content: "";
+    height: 15px;
+    background: transparent url('../img/footer-bottom-grey-1000.png') no-repeat;
+    margin: -1px -10px 0 -10px;
+    width: 1000px;
+}
+
+#footer p {
+    display: inline-block;
+    margin: 0 0px 10px 40px;
+    vertical-align: top;
+}
+#footer p.list {
+    margin-left: 55px;
+}
+
+#footer span {
+    background: url('../img/dot-grey.jpg') 0px 1px no-repeat;
+    margin-left: 16px;
+    padding-left: 20px;
+    height: 20px;
+}
+.deze-tag-moet-je-niet-weergeven {
+    display: none;
+}
