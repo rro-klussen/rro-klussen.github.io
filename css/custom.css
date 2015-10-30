@@ -24,7 +24,7 @@ a {
 
 
 body {
-    background: #eee url('../img/grey.png') repeat;
+    background: #eee url('../images/grey.png') repeat;
 }
 #container {
     width: 1000px;
@@ -35,7 +35,7 @@ body {
 }
 #header {
     height: 175px;
-    background: #fff url('../img/header-1000.jpg');
+    background: #fff url('../images/header-1000.jpg');
 }
 
 
@@ -83,7 +83,7 @@ body {
     position: absolute;
 }
 #body li .photo_overlay {
-    background: url('../img/photo-overlay.png');
+    background: url('../images/photo-overlay.png');
     z-index: 99;
 }
 #body li .photo_frame .photo {
@@ -106,7 +106,7 @@ body {
     width: 12px;
     height: 0;
     padding-top: 12px;
-    background-image: url('../img/pager.png');
+    background-image: url('../images/pager.png');
     background-position: 0 0;
     overflow: hidden;
     text-indent: -9999px;
@@ -155,14 +155,14 @@ body {
 /* --------------------------------- FOOTER --------------------------------- */
 #footer {
     height: 110px;
-    background: #efeef3 url('../img/footer-grey-1000.jpg') no-repeat;
+    background: #efeef3 url('../images/footer-grey-1000.jpg') no-repeat;
     padding: 34px 10px 0px 10px;
 }
 #footer:after {
     display: block;
     content: "";
     height: 15px;
-    background: transparent url('../img/footer-bottom-grey-1000.png') no-repeat;
+    background: transparent url('../images/footer-bottom-grey-1000.png') no-repeat;
     margin: -1px -10px 0 -10px;
     width: 1000px;
 }
@@ -177,7 +177,7 @@ body {
 }
 
 #footer span {
-    background: url('../img/dot-grey.jpg') 0px 1px no-repeat;
+    background: url('../images/dot-grey.jpg') 0px 1px no-repeat;
     margin-left: 16px;
     padding-left: 20px;
     height: 20px;
