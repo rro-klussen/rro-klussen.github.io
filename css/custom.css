@@ -194,5 +194,49 @@ body {
     height: 20px;
 }
 .deze-tag-moet-je-niet-weergeven {
-    display: none;
+    display: none !important;
+}
+
+
+
+@media only screen and (max-width: 999px) {
+    #container {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    #header {
+        background-position: right top;
+    }
+    #body {
+        padding: 0 20px;
+    }
+    .social-plugin-container {
+        overflow-x: scroll;
+    }
+    #footer {
+        height: initial;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #footer span {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 8px;
+        background-position: 0px 3px;
+    }
+    #footer p,
+    #footer p.list {
+        margin-left: 0;
+    }
+    #footer:after {
+        width: 100%;
+    }
+    h1 {
+        font-size: 29px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
 }
