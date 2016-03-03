@@ -12,14 +12,14 @@ h3 {
     font-size: 18px;
 }
 p {
-    margin: 0px;
+    margin: 0 0 10px 0;
     font-size: 18px;
 }
 li {
     font-size: 18px;
 }
 a {
-    text-decoration: none;
+    color: #222;
 }
 
 
@@ -41,7 +41,7 @@ body {
 
 /* ---------------------- BODY - main block definitions --------------------- */
 #body {
-    min-height: 600px;
+    min-height: 200px;
     padding-left: 50px;
 }
 #body ul {
@@ -72,6 +72,17 @@ body {
     width: 440px;
     position: relative;
 }
+
+
+/* ---------------------- BODY - social plugins ----------------------------- */
+.social-plugin-container {
+    text-align: center;
+    padding: 50px 0;
+}
+.social-plugin-container > * {
+    display: inline-block;
+}
+
 
 /* ----------------------------- BODY - photo ------------------------------- */
 #body li .photo_container, 
